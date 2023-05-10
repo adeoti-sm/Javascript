@@ -50,4 +50,3 @@ const adeoti = {
 };
 
 adeoti.calcAge(2009);
-document.querySelector
