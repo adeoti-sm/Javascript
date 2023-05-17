@@ -69,29 +69,78 @@
 
 //  khalid.calcAge()
 
-const adeoti = {
-  firstName: 'Adeoti',
-  birthYear: 1998,
-  calcAge: function () {
-    const age = 2018 - this.birthYear;
-    console.log(age);
-    console.log(this);
+// const adeoti = {
+//   firstName: 'Adeoti',
+//   birthYear: 1998,
+//   calcAge: function () {
+//     const age = 2018 - this.birthYear;
+//     console.log(age);
+//     console.log(this);
 
-    //     solution 1
-    //     const self = this
-    //     const isMillenial = function(){
-    //         console.log(self.birthYear >=1981 && self.birthYear <= 1996)
-    //     }
-    //     isMillenial()
-    // },
+//     //     solution 1
+//     //     const self = this
+//     //     const isMillenial = function(){
+//     //         console.log(self.birthYear >=1981 && self.birthYear <= 1996)
+//     //     }
+//     //     isMillenial()
+//     // },
 
-    const isMillenial = () => {
-      console.log(this.birthYear >= 1981 && this.birthYear <= 1996);
-    };
-    isMillenial();
-  },
-  // greet: () => console.log(`Hey ${this.firstName}`)
-};
+//     const isMillenial = () => {
+//       console.log(this.birthYear >= 1981 && this.birthYear <= 1996);
+//     };
+//     isMillenial();
+//   },
+//   // greet: () => console.log(`Hey ${this.firstName}`)
+// };
 
-//  adeoti.greet()
-adeoti.calcAge();
+// //  adeoti.greet()
+// adeoti.calcAge();
+
+
+// let age = 30;
+// let oldAge = age;
+// age = 31;
+
+// console.log(age, oldAge);
+
+// const me = {
+//   name: 'Adeoti',
+//   age: 30
+// }
+
+// const friend = me;
+// friend.age = 27;
+
+// console.log(me);
+// console.log(friend);
+
+// //Primitive tyoes
+// let lastName = 'Williams'
+// let oldLastName = lastName;
+// lastName = 'Jones'
+
+// console.log(lastName, oldLastName);
+
+// //Reference Types
+// const jessica ={
+//   firstName: 'Jessica',
+//   lastName: 'Williams',
+//   age: 27
+// }
+
+// const marriedJessica = jessica;
+// marriedJessica.lastName = 'Jones'
+
+// console.log(`Before marriage:`, jessica);
+
+const jessica2 ={
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27
+}
+
+const jessicaCopy = Object.assign({}, jessica2); //create a new object that copies the properties from the second argument
+jessicaCopy.lastName ='Jones'
+
+console.log(`Before marriage:`, jessica2);
+console.log(`After marriage:`, jessicaCopy);
