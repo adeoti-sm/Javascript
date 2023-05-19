@@ -85,53 +85,53 @@
 //     //     isMillenial()
 //     // },
 
-//     const isMillenial = () => {
-//       console.log(this.birthYear >= 1981 && this.birthYear <= 1996);
-//     };
-//     isMillenial();
-//   },
-//   // greet: () => console.log(`Hey ${this.firstName}`)
-// };
-
-// //  adeoti.greet()
-// adeoti.calcAge();
+    const isMillenial = () => {
+      console.log(this.birthYear >= 1981 && this.birthYear <= 1996);
+    };
+    isMillenial();
+  
+  // greet: () => console.log(`Hey ${this.firstName}`)
 
 
-// let age = 30;
-// let oldAge = age;
-// age = 31;
+//  adeoti.greet()
+adeoti.calcAge();
 
-// console.log(age, oldAge);
 
-// const me = {
-//   name: 'Adeoti',
-//   age: 30
-// }
+let age = 30;
+let oldAge = age;
+age = 31;
 
-// const friend = me;
-// friend.age = 27;
+console.log(age, oldAge);
 
-// console.log(me);
-// console.log(friend);
+const me = {
+  name: 'Adeoti',
+  age: 30
+}
 
-// //Primitive tyoes
-// let lastName = 'Williams'
-// let oldLastName = lastName;
-// lastName = 'Jones'
+const friend = me;
+friend.age = 27;
 
-// console.log(lastName, oldLastName);
+console.log(me);
+console.log(friend);
 
-// //Reference Types
-// const jessica ={
-//   firstName: 'Jessica',
-//   lastName: 'Williams',
-//   age: 27
-// }
+//Primitive tyoes
+let lastName = 'Williams'
+let oldLastName = lastName;
+lastName = 'Jones'
 
-// const marriedJessica = jessica;
-// marriedJessica.lastName = 'Jones'
+console.log(lastName, oldLastName);
 
-// console.log(`Before marriage:`, jessica);
+//Reference Types
+const jessica ={
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27
+}
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Jones'
+
+console.log(`Before marriage:`, jessica);
 
 const jessica2 ={
   firstName: 'Jessica',
